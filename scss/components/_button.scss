@@ -27,7 +27,9 @@
   }
 
   &#{&}-icon {
-    padding: 0 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
 
     span {
       padding: 0 0.5rem;
@@ -61,7 +63,7 @@
       border-radius: 0;
       box-shadow: none;
       color: $primary;
-      background-color: $secondary;
+      background-color: $black-3;
 
       &:hover {
         background-color: $btn-primary-text-hover;
@@ -90,16 +92,82 @@
     background-color: $secondary;
     color: $primary;
 
+    &:hover {
+      background-color: $btn-secondary-hover;
+      box-shadow: $box-shadow-button-hover;
+    }
+
+    &-icon {
+      background-color: $secondary;
+      color: $white;
+      display: inline-flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+
+      span {
+        padding: 0 0.5rem;
+      }
+
+      &:hover {
+        background-color: $btn-secondary-hover;
+        box-shadow: $box-shadow-button-hover;
+      }
+    }
+
     &-outline {
       background-color: $black-3;
-      color: $primary;
+      color: $secondary;
       border: 2px solid $secondary;
       box-shadow: none;
 
       &:hover {
         color: $primary;
-        background-color: $secondary
+        background-color: $secondary;
       }
+    }
+
+    &-text {
+      border: none;
+      border: 0;
+      box-shadow: none;
+      color: $secondary;
+      background-color: $black-3;
+
+      &:hover {
+        background-color: $btn-secondary-text-hover;
+      }
+    }
+  }
+
+  &#{&}-disabled {
+    pointer-events: none;
+    opacity: 0.6;
+    background-color: $primary;
+    color: $secondary;
+  }
+
+  &#{&}-sm {
+    padding: 0.15rem 1rem;
+    font-size: 0.7rem;
+    height: 2rem;
+  }
+
+  &#{&}-lg {
+    padding: 1.25rem;
+    font-size: 1.25rem;
+  }
+
+  &#{&}-floating {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary;
+    span {
+      font-size: 1.7rem;
+      color: $white;
     }
   }
 }

@@ -1,0 +1,155 @@
+/* Button Component Styles Start */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.button-container button {
+  margin: 0.5rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  border: 0;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  color: rgb(52, 194, 233);
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(213, 213, 213);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.btn.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.btn.btn-icon span {
+  padding: 0 0.5rem;
+}
+.btn.btn-primary {
+  background-color: rgb(52, 194, 233);
+  color: rgb(102, 44, 191);
+}
+.btn.btn-primary:hover {
+  background-color: rgba(19, 165, 205, 0.95);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.btn.btn-primary-outline {
+  background-color: rgb(56, 56, 58);
+  color: rgb(52, 194, 233);
+  border: 2px solid rgb(52, 194, 233);
+  box-shadow: none;
+}
+.btn.btn-primary-outline:hover {
+  background-color: rgb(52, 194, 233);
+  box-shadow: rgb(52, 194, 233);
+  color: rgb(102, 44, 191);
+}
+.btn.btn-primary-text {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: rgb(52, 194, 233);
+  background-color: rgb(56, 56, 58);
+}
+.btn.btn-primary-text:hover {
+  background-color: rgba(52, 194, 233, 0.04);
+}
+.btn.btn-primary-icon {
+  background-color: rgb(52, 194, 233);
+  color: rgb(102, 44, 191);
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.btn.btn-primary-icon span {
+  padding: 0 0.5rem;
+}
+.btn.btn-primary-icon:hover {
+  background-color: rgba(19, 165, 205, 0.95);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.btn.btn-secondary {
+  background-color: rgb(102, 44, 191);
+  color: rgb(52, 194, 233);
+}
+.btn.btn-secondary:hover {
+  background-color: rgba(88, 17, 196, 0.95);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.btn.btn-secondary-icon {
+  background-color: rgb(102, 44, 191);
+  color: rgb(255, 255, 255);
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.btn.btn-secondary-icon span {
+  padding: 0 0.5rem;
+}
+.btn.btn-secondary-icon:hover {
+  background-color: rgba(88, 17, 196, 0.95);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.btn.btn-secondary-outline {
+  background-color: rgb(56, 56, 58);
+  color: rgb(102, 44, 191);
+  border: 2px solid rgb(102, 44, 191);
+  box-shadow: none;
+}
+.btn.btn-secondary-outline:hover {
+  color: rgb(52, 194, 233);
+  background-color: rgb(102, 44, 191);
+}
+.btn.btn-secondary-text {
+  border: none;
+  border: 0;
+  box-shadow: none;
+  color: rgb(102, 44, 191);
+  background-color: rgb(56, 56, 58);
+}
+.btn.btn-secondary-text:hover {
+  background-color: rgba(102, 44, 191, 0.08);
+}
+.btn.btn-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+  background-color: rgb(52, 194, 233);
+  color: rgb(102, 44, 191);
+}
+.btn.btn-sm {
+  padding: 0.15rem 1rem;
+  font-size: 0.7rem;
+  height: 2rem;
+}
+.btn.btn-lg {
+  padding: 1.25rem;
+  font-size: 1.25rem;
+}
+.btn.btn-floating {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(52, 194, 233);
+}
+.btn.btn-floating span {
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+}
+
+/* Button Component Styles End */

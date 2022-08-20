@@ -1,0 +1,85 @@
+/* Badge Component Styles Start */
+.badge {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  text-align: center;
+  margin-right: 1rem;
+}
+.badge-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+.badge-avatar {
+  width: 16%;
+  height: 16%;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  bottom: 25%;
+  right: 17%;
+  background-color: rgb(52, 194, 233);
+}
+.badge-avatar.status-online {
+  background-color: rgb(27, 112, 82);
+}
+.badge-avatar.status-away {
+  background-color: rgb(249, 166, 26);
+}
+.badge-avatar.status-away::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+.badge-avatar.status-dnd {
+  background-color: rgb(243, 70, 72);
+}
+.badge-avatar.status-dnd::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 20%;
+  background-color: rgb(33, 33, 33);
+  border-radius: 2px;
+  top: 45%;
+  left: 15%;
+}
+.badge-icon {
+  position: relative;
+  width: 10%;
+  height: 10%;
+}
+.badge-icon.number {
+  position: absolute;
+  font-size: 0.75rem;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: rgb(102, 44, 191);
+  color: rgb(255, 255, 255);
+  top: 0;
+  right: -15%;
+}
+.badge-icon.av-number {
+  position: absolute;
+  font-size: 0.75rem;
+  min-width: 13px;
+  min-height: 13px;
+  width: 20%;
+  height: 21%;
+  border-radius: 50%;
+  background-color: rgb(102, 44, 191);
+  color: rgb(255, 255, 255);
+  bottom: 25%;
+  right: 17%;
+}
+
+/* Badge Component Styles End */
