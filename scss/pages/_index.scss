@@ -1,0 +1,82 @@
+/* Landing Page Styles Start */
+.bg_section {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.bg_main {
+  background-color: $black-3;
+  color: $primary;
+}
+
+.index-main {
+  width: 80vw;
+  height: 100vh;
+  overflow-x: hidden;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.index-main button:hover {
+  transform: scale(1.1);
+}
+
+.name {
+  font-size: 5rem;
+  font-family: "Sirin Stencil", cursive;
+  background: linear-gradient(-45deg, $primary, $secondary, #10befd, #02ffc4);
+  animation: gradient_animation 5s ease infinite;
+  -webkit-animation: gradient_animation 5s ease infinite;
+  -moz-animation: gradient_animation 5s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.desc {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: rgb(198, 207, 228);
+  font-weight: bold;
+}
+
+.logo_main {
+  width: 200px;
+  animation: slide_up 3s ease infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes slide_up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient_animation {
+  0% {
+    background-position: 0% 52%;
+  }
+  50% {
+    background-position: 100% 52%;
+  }
+  100% {
+    background-position: 0% 52%;
+  }
+}
+
+/* Landing Page Styles End */

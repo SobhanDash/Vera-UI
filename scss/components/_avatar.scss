@@ -1,0 +1,86 @@
+.avatar {
+  margin: 0.5rem;
+  position: relative;
+  display: inline;
+  > img {
+    border-radius: 50%;
+    height: 2rem;
+  }
+  > .avatar-presence {
+    bottom: 0.4rem;
+    right: 0.3rem;
+  }
+}
+.avatar-std {
+  > img {
+    height: 3rem;
+  }
+  > .avatar-presence {
+    bottom: 0.4rem;
+    right: 0.2rem;
+  }
+}
+.avatar-xl {
+  > img {
+    height: 5rem;
+  }
+  > .avatar-presence {
+    bottom: 0.6rem;
+    right: 0.35rem;
+  }
+}
+.avatar-lg {
+  > img {
+    height: 4rem;
+  }
+  > .avatar-presence {
+    bottom: 0.5rem;
+    right: 0.25rem;
+  }
+}
+.avatar-sm {
+  > img {
+    height: 2rem;
+  }
+  > .avatar-presence {
+    border: 1px solid $white;
+    bottom: 0.37rem;
+    right: 0.15rem;
+  }
+}
+.avatar-xs {
+  > img {
+    height: 1.5rem;
+  }
+  > .avatar-presence {
+    border: 1px solid $white;
+    bottom: 0.35rem;
+    right: 0.05rem;
+  }
+}
+.avatar-square {
+  > img {
+    border-radius: 25%;
+  }
+}
+.avatar-presence {
+  border: 2px solid $white;
+  background-color: $offline;
+  padding: 8%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+}
+.avatar-presence.online {
+  background-color: $online;
+}
+.avatar-presence.offline {
+  background-color: $offline;
+}
+.avatar-presence.dnd {
+  background-color: $dnd;
+}
+.disp-flex {
+  align-items: flex-end;
+}

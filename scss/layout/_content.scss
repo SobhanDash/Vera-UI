@@ -1,0 +1,94 @@
+/* Main Content Styles Start */
+
+.main {
+  text-align: left;
+  background-color: $black-3;
+  color: $primary;
+
+  @include media-md {
+    width: 70vw;
+    margin: 0 auto;
+  }
+
+  &-topic {
+    padding: 2.5rem 1rem;
+    border-bottom: 1px solid $btn-secondary-text-hover;
+    @include transition-ease;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      opacity: 0.9;
+    }
+    h4 {
+      font-size: 1rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    @include media-md {
+      &.open {
+        width: 55vw;
+      }
+
+      &-topic {
+        padding: 3.5rem 1rem;
+      }
+    }
+  }
+
+  &-content {
+    @include media-md {
+      &.open {
+        width: 55vw;
+      }
+    }
+
+    &__box {
+      padding: 2rem 1rem;
+
+      .box {
+        &-heading {
+          font-size: 1.75rem;
+          font-weight: 700;
+          opacity: 0.9;
+        }
+
+        &-description {
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+          opacity: 0.8;
+          margin-bottom: 2rem;
+
+          ul {
+            padding: 1rem 0 1rem 2rem;
+
+            li {
+              padding: 0.5rem 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .installation-container {
+    margin: 1rem 0 1rem 2rem;
+    padding-bottom: 2rem;
+    max-width: 50vw;
+  }
+  @include media-md {
+    .installation-container {
+      width: 65vw;
+    }
+  }
+  .div-border {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid rgba(198, 207, 228, 0.04);
+  }
+  .disp-flex {
+    display: flex;
+  }
+}
+
+/* Main Content Styles End */

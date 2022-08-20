@@ -1,0 +1,170 @@
+/* Header, Sidebar, Footer Styles Start */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  background-color: $black-3;
+  border-bottom: 1px solid $box-shadow-button;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  z-index: 500;
+  @include transition-ease-2;
+}
+.header-logo-div {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.header-logo_title {
+  font-family: "Sirin Stencil", cursive;
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+.menu-btn {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  @include transition-ease-2;
+
+  svg {
+    color: $primary;
+  }
+
+  .menuicon {
+    display: block;
+  }
+  .xicon {
+    display: none;
+  }
+}
+.menu-btn.open {
+  transform: rotate(720deg);
+  background: transparent;
+  &::before {
+    transform: rotate(45deg) translate(5px, 8px);
+    background: #272727;
+  }
+  &::after {
+    width: 28px;
+    transform: rotate(-45deg) translate(3px, -7px);
+    background: #272727;
+
+    &-menu-btn__burger {
+      display: none;
+    }
+  }
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: $black-3;
+  box-shadow: 0 10px 6px 1px rgba(0, 0, 0, 0.2);
+  padding-top: 5.75rem;
+  @include transition-ease-2;
+
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    font-weight: 400;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    color: $primary;
+    &:first-child {
+      font-size: 1.5rem;
+      &:hover {
+        &::before {
+          width: 4px;
+          height: 30px;
+          background-image: linear-gradient($primary, $secondary);
+        }
+      }
+    }
+    &:hover {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 4px;
+        height: 22px;
+        background-image: linear-gradient($primary, $secondary);
+      }
+    }
+  }
+  a.active {
+    &:first-child {
+      &::before {
+        width: 4px;
+        height: 30px;
+        background-image: linear-gradient($primary, $secondary);
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 4px;
+      height: 22px;
+      background-image: linear-gradient($primary, $secondary);
+    }
+  }
+  .active {
+    @include transition-ease-2;
+  }
+}
+.sidebar.open {
+  width: 60vw;
+}
+@media screen and (min-width: 768px) {
+  .sidenav.open {
+    width: 30vw;
+  }
+  .sidenav {
+    padding-top: 7.5rem;
+    a {
+      width: 15vw;
+      &:hover {
+        width: 15vw;
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+
+  .footer-button {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    svg {
+      width: 1.5rem;
+      height: 2rem;
+    }
+  }
+
+  @include media-md {
+    width: 95%;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+  }
+}
+/* Header, Sidebar, Footer Styles End */

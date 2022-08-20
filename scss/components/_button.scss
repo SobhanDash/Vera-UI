@@ -1,0 +1,106 @@
+/* Button Component Styles Start */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  button {
+    margin: 0.5rem;
+  }
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  border: 0;
+  box-shadow: $box-shadow-button;
+  cursor: pointer;
+  color: $primary;
+  @include transition-ease;
+
+  &:hover {
+    background-color: $btn-hover-background;
+    box-shadow: $box-shadow-button;
+  }
+
+  &#{&}-icon {
+    padding: 0 0.5rem;
+
+    span {
+      padding: 0 0.5rem;
+    }
+  }
+
+  &#{&}-primary {
+    background-color: $primary;
+    color: $secondary;
+
+    &:hover {
+      background-color: $btn-primary-hover;
+      box-shadow: $box-shadow-button-hover;
+    }
+
+    &-outline {
+      background-color: $black-3;
+      color: $primary;
+      border: 2px solid $primary;
+      box-shadow: none;
+
+      &:hover {
+        background-color: $primary;
+        box-shadow: $primary;
+        color: $secondary;
+      }
+    }
+
+    &-text {
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      color: $primary;
+      background-color: $secondary;
+
+      &:hover {
+        background-color: $btn-primary-text-hover;
+      }
+    }
+
+    &-icon {
+      background-color: $primary;
+      color: $secondary;
+      display: inline-flex;
+      align-items: center;
+      padding: 1rem 1.5rem;
+
+      span {
+        padding: 0 0.5rem;
+      }
+
+      &:hover {
+        background-color: $btn-primary-hover;
+        box-shadow: $box-shadow-button-hover;
+      }
+    }
+  }
+
+  &#{&}-secondary {
+    background-color: $secondary;
+    color: $primary;
+
+    &-outline {
+      background-color: $black-3;
+      color: $primary;
+      border: 2px solid $secondary;
+      box-shadow: none;
+
+      &:hover {
+        color: $primary;
+        background-color: $secondary
+      }
+    }
+  }
+}
+/* Button Component Styles End */

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Vera Ui is a lightweight CSS Library for developing fast and responsive web interfaces!"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./prism.css" />
+    <script src="./prism.js" defer></script>
+    <title>Badge | Vera UI</title>
+  </head>
+  <body>
+    <div class="main">
+      <div id="sidebar" class="sidebar">
+        <a href="start.html" class="active"> Getting Started </a>
+        <a href="alert.html"> Alert </a>
+        <a href="avatar.html"> Avatar </a>
+        <a href="badge.html"> Badge </a>
+        <a href="button.html"> Button </a>
+        <a href="card.html"> Card </a>
+        <a href="image.html"> Image </a>
+        <a href="input.html"> Input </a>
+        <a href="modal.html"> Modal </a>
+        <a href="list.html"> List </a>
+        <a href="rating.html"> Rating </a>
+        <a href="utilities.html"> Utilities </a>
+        <a href="navigation.html"> Navigation </a>
+        <a href="grid.html"> Grid </a>
+      </div>
+
+      <div class="header">
+        <div class="header-logo-div">
+          <a href="./index.html">
+            <img src="assets/VERA.svg" alt="Logo" class="header-logo" />
+          </a>
+          <p class="header-logo_title">VERA UI</p>
+        </div>
+        <div class="menu-btn">
+          <span class="menu-btn__burger">
+            <span class="menuicon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </span>
+            <span class="xicon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+                class="xicon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="main-topic">
+        <h1>Badge</h1>
+        <h4>
+          Badge generates a small badge to the top-right of its child(ren).
+        </h4>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup" id>
+              @import url(https://vera-ui.netlify.app/dist/styles/badge.css)
+
+              <link rel="stylesheet" href="https://vera-ui.netlify.app/dist/styles/badge.css">
+              <link rel="stylesheet" href="http://127.0.0.1:5500/dist/styles/badge.css">
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Badges on Avatars</div>
+          <div class="box-description">Want to make avatars with badges?</div>
+          <div class="badge-container">
+            <div class="badge">
+              <figure class="avatar avatar-xl disp-inline">
+                <img
+                  src="https://i.pinimg.com/564x/e3/d6/15/e3d615125ba3c4e12becc86b21d20b0d.jpg"
+                  class="avatar avatar-lg"
+                  alt="avatar-large"
+                />
+              </figure>
+              <span class="badge-avatar status-online"></span>
+            </div>
+            <div class="badge">
+              <figure class="avatar avatar-lg disp-inline">
+                <img
+                  src="https://i.pinimg.com/564x/29/ed/55/29ed550df0c2d38d54842c2d35fea974.jpg"
+                  class="avatar avatar-lg"
+                  alt="avatar-large"
+                />
+              </figure>
+              <span class="badge-avatar status-away"></span>
+            </div>
+            <div class="badge">
+              <figure class="avatar avatar-std disp-inline">
+                <img
+                  src="https://i.pinimg.com/564x/80/74/27/807427512c98be7fd73a182f0b294e9a.jpg"
+                  class="avatar avatar-std"
+                  alt="avatar-standard"
+                />
+              </figure>
+              <span class="badge-avatar status-dnd"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup">
+              <div class="badge-container">
+                <div class="badge">
+                <figure class="avatar avatar-xl disp-inline">
+                  <img
+                    src="..."
+                    class="avatar avatar-lg"
+                    alt="..."
+                  />
+                </figure>
+                <span class="badge-avatar status-online"></span>
+                </div>
+                <div class="badge">
+                  <figure class="avatar avatar-lg disp-inline">
+                    <img
+                      src="..."
+                      class="avatar avatar-lg"
+                      alt="..."
+                    />
+                  </figure>
+                  <span class="badge-avatar status-away"></span>
+                </div>
+                <div class="badge">
+                  <figure class="avatar avatar-std disp-inline">
+                    <img
+                      src="..."
+                      class="avatar avatar-std"
+                      alt="..."
+                    />
+                  </figure>
+                  <span class="badge-avatar status-dnd"></span>
+                </div>
+              </div>
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Badges on Icons</div>
+          <div class="box-description">Badges can be implemented on Icons.</div>
+          <div class="badge-container">
+            <div class="badge">
+              <span class="material-icons-outlined md-36"> shopping_bag </span>
+              <span class="badge-icon number">2</span>
+            </div>
+            <div class="badge">
+              <span class="material-icons-outlined md-36"> notifications </span>
+              <span class="badge-icon number">4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup">
+              <div class="badge-container">
+                <div class="badge">
+                  <span class="material-icons-outlined md-36"> shopping_bag </span>
+                  <span class="badge-icon number">2</span>
+                </div>
+                <div class="badge">
+                  <span class="material-icons-outlined md-36"> notifications </span>
+                  <span class="badge-icon number">4</span>
+                </div>
+              </div>
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Number Badges on Avatars</div>
+          <div class="box-description">
+            Want to make avatars with number badges?
+          </div>
+          <div class="badge-container">
+            <div class="badge">
+              <figure class="avatar avatar-lg disp-inline">
+                <img
+                  src="https://i.pinimg.com/564x/29/ed/55/29ed550df0c2d38d54842c2d35fea974.jpg"
+                  class="avatar avatar-lg"
+                  alt="avatar-large"
+                />
+              </figure>
+              <span class="badge-avatar badge-icon av-number">6</span>
+            </div>
+            <div class="badge">
+              <figure class="avatar avatar-std disp-inline">
+                <img
+                  src="https://i.pinimg.com/564x/80/74/27/807427512c98be7fd73a182f0b294e9a.jpg"
+                  class="avatar avatar-std"
+                  alt="avatar-standard"
+                />
+              </figure>
+              <span class="badge-avatar badge-icon av-number">3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup">
+                  <div class="badge-container">
+                <div class="badge">
+                  <figure class="avatar avatar-lg disp-inline">
+                    <img
+                      src="..."
+                      class="avatar avatar-lg"
+                      alt="..."
+                    />
+                  </figure>
+                  <span class="badge-avatar badge-icon av-number">6</span>
+                </div>
+                <div class="badge">
+                  <figure class="avatar avatar-std disp-inline">
+                    <img
+                      src="..."
+                      class="avatar avatar-std"
+                      alt="..."
+                    />
+                  </figure>
+                  <span class="badge-avatar badge-icon av-number">3</span>
+                </div>
+              </div>
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="avatar.html" class="footer-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          Avatar
+        </a>
+        <a href="button.html" class="footer-button">
+          Button
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

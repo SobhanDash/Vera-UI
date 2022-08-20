@@ -1,0 +1,52 @@
+/* Alert Component Styles Start */
+.alerts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.alert {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  max-width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 1rem;
+}
+.alert.alert-error {
+  color: rgb(148, 27, 19);
+  background-color: rgb(253, 236, 234);
+}
+.alert.alert-error span:first-child {
+  color: rgb(244, 67, 54);
+  margin-right: 1rem;
+}
+.alert.alert-warning {
+  color: rgb(102, 60, 0);
+  background-color: rgb(255, 244, 229);
+}
+.alert.alert-warning span:first-child {
+  color: rgb(255, 152, 0);
+  margin-right: 1rem;
+}
+.alert.alert-info {
+  color: rgb(13, 60, 97);
+  background-color: rgb(232, 244, 253);
+}
+.alert.alert-info span:first-child {
+  color: rgb(33, 150, 243);
+  margin-right: 1rem;
+}
+.alert.alert-success {
+  color: rgb(30, 70, 32);
+  background-color: rgb(237, 247, 237);
+}
+.alert.alert-success span:first-child {
+  color: rgb(76, 175, 80);
+  margin-right: 1rem;
+}
+
+/* Alert Component Styles End */

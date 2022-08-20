@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Vera Ui is a lightweight CSS Library for developing fast and responsive web interfaces!"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./prism.css" />
+    <script src="./prism.js" defer></script>
+    <title>Avatar | Vera UI</title>
+  </head>
+  <body>
+    <main class="main">
+      <div id="sidebar" class="sidebar">
+        <a href="start.html" class="active"> Getting Started </a>
+        <a href="alert.html"> Alert </a>
+        <a href="avatar.html"> Avatar </a>
+        <a href="badge.html"> Badge </a>
+        <a href="button.html"> Button </a>
+        <a href="card.html"> Card </a>
+        <a href="image.html"> Image </a>
+        <a href="input.html"> Input </a>
+        <a href="modal.html"> Modal </a>
+        <a href="list.html"> List </a>
+        <a href="rating.html"> Rating </a>
+        <a href="utilities.html"> Utilities </a>
+        <a href="navigation.html"> Navigation </a>
+        <a href="grid.html"> Grid </a>
+      </div>
+
+      <div class="header">
+        <div class="header-logo-div">
+          <a href="./index.html">
+            <img src="assets/VERA.svg" alt="Logo" class="header-logo" />
+          </a>
+          <p class="header-logo_title">VERA UI</p>
+        </div>
+        <div class="menu-btn">
+          <span class="menu-btn__burger">
+            <span class="menuicon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </span>
+            <span class="xicon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+                class="xicon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="main-topic">
+        <h1>Avatar</h1>
+        <h4>
+          The Avatar component is used to represent a user, and displays the
+          profile picture, initials or fallback icon.
+        </h4>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup" id>
+              @import url(https://vera-ui.netlify.app/dist/styles/avatar.css)
+
+              <link rel="stylesheet" href="https://vera-ui.netlify.app/dist/styles/avatar.css">
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Standard Avatar</div>
+          <div class="box-description">
+            The avatar component has 5 sizes,
+            <span class="highlight">avatar-xl</span> (5em),
+            <span class="highlight">avatar-lg</span> (4em),
+            <span class="highlight">avatar-std </span>(3em)
+            <span class="highlight">avatar-sm</span> (2em), and
+            <span class="highlight">avatar-xs</span> (1.5em).
+          </div>
+          <div class="disp-flex">
+            <figure class="avatar avatar-xl disp-inline">
+              <img
+                src="https://i.pinimg.com/564x/e1/e3/5b/e1e35b617d9c16dae84c359ac4b6f0da.jpg"
+                alt="avatar demo"
+                height="4em"
+              />
+            </figure>
+            <figure class="avatar avatar-lg disp-inline">
+              <img
+                src="https://i.pinimg.com/564x/33/d5/c5/33d5c5aff087511af295037d8b22d211.jpg"
+                alt="avatar demo"
+                height="3em"
+              />
+            </figure>
+            <figure class="avatar avatar-std disp-inline">
+              <img
+                src="https://i.pinimg.com/564x/e3/d6/15/e3d615125ba3c4e12becc86b21d20b0d.jpg"
+                alt="avatar demo"
+                height="2em"
+              />
+            </figure>
+            <figure class="avatar avatar-sm disp-inline">
+              <img
+                src="https://i.pinimg.com/564x/29/ed/55/29ed550df0c2d38d54842c2d35fea974.jpg"
+                alt="avatar demo"
+                height="1.5em"
+              />
+            </figure>
+            <figure class="avatar avatar-xs disp-inline">
+              <img
+                src="https://i.pinimg.com/564x/80/74/27/807427512c98be7fd73a182f0b294e9a.jpg"
+                alt="avatar demo"
+                height="1em"
+              />
+            </figure>
+          </div>
+          <div class="div-border">
+            <div class="installation-container">
+              <section class="embed">
+                <script
+                  type="text/plain"
+                  class="line-numbers language-markup"
+                  id
+                >
+                  <figure class="avatar avatar-xl">
+                      <img src="..." alt="..."/>
+                  </figure>
+
+                  <figure class="avatar avatar-std">
+                      <img src="..." alt="..."/>
+                  </figure>
+                </script>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Avatar with Status</div>
+          <div class="box-description">
+            Avatars support presence indicators. There are three indicators
+            <span class="highlight">online</span>,
+            <span class="highlight">offline</span> and
+            <span class="highlight">dnd</span>.
+          </div>
+          <div class="disp-flex">
+            <figure class="avatar avatar-xl disp-inline">
+              <img
+                src="https://i.pinimg.com/564x/e1/e3/5b/e1e35b617d9c16dae84c359ac4b6f0da.jpg"
+                alt="avatar demo"
+                height="4em"
+              />
+              <div class="avatar-presence dnd"></div>
+            </figure>
+            <figure class="avatar avatar-lg disp-inline">
+              <img
+                src="https://i.pinimg.com/564x/33/d5/c5/33d5c5aff087511af295037d8b22d211.jpg"
+                alt="avatar demo"
+                height="3em"
+              />
+              <div class="avatar-presence offline"></div>
+            </figure>
+            <figure class="avatar avatar-std disp-inline">
+              <img
+                src="https://i.pinimg.com/564x/e3/d6/15/e3d615125ba3c4e12becc86b21d20b0d.jpg"
+                alt="avatar demo"
+                height="2em"
+              />
+              <div class="avatar-presence online"></div>
+            </figure>
+          </div>
+          <div class="div-border">
+            <div class="installation-container">
+              <section class="embed">
+                <script
+                  type="text/plain"
+                  class="line-numbers language-markup"
+                  id
+                >
+                  <figure class="avatar avatar-xl">
+                      <img src="..." alt="..."/>
+                      <div class="avatar-presence dnd">
+                  </figure>
+
+                  <figure class="avatar avatar-lg">
+                      <img src="..." alt="..."/>
+                      <div class="avatar-presence offline">
+                  </figure>
+                </script>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="alert.html" class="footer-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          Alert
+        </a>
+        <a href="badge.html" class="footer-button">
+          Badge
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

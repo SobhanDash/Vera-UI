@@ -1,0 +1,82 @@
+/* Alert Component Styles End */
+.avatar {
+  margin: 0.5rem;
+  position: relative;
+  display: inline;
+}
+.avatar > img {
+  border-radius: 50%;
+  height: 2rem;
+}
+.avatar > .avatar-presence {
+  bottom: 0.4rem;
+  right: 0.3rem;
+}
+
+.avatar-std > img {
+  height: 3rem;
+}
+.avatar-std > .avatar-presence {
+  bottom: 0.4rem;
+  right: 0.2rem;
+}
+
+.avatar-xl > img {
+  height: 5rem;
+}
+.avatar-xl > .avatar-presence {
+  bottom: 0.6rem;
+  right: 0.35rem;
+}
+
+.avatar-lg > img {
+  height: 4rem;
+}
+.avatar-lg > .avatar-presence {
+  bottom: 0.5rem;
+  right: 0.25rem;
+}
+
+.avatar-sm > img {
+  height: 2rem;
+}
+.avatar-sm > .avatar-presence {
+  border: 1px solid rgb(255, 255, 255);
+  bottom: 0.37rem;
+  right: 0.15rem;
+}
+
+.avatar-xs > img {
+  height: 1.5rem;
+}
+.avatar-xs > .avatar-presence {
+  border: 1px solid rgb(255, 255, 255);
+  bottom: 0.35rem;
+  right: 0.05rem;
+}
+
+.avatar-square > img {
+  border-radius: 25%;
+}
+
+.avatar-presence {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(188, 195, 206);
+  padding: 8%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+}
+
+.avatar-presence.online {
+  background-color: rgb(50, 182, 67);
+}
+
+.avatar-presence.offline {
+  background-color: rgb(188, 195, 206);
+}
+
+.avatar-presence.dnd {
+  background-color: rgb(255, 0, 0);
+}
