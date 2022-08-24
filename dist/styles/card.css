@@ -1,0 +1,77 @@
+/* Card Component Styles Start */
+.card-container {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  font-size: 0.875rem;
+  padding: 1.25rem 0;
+}
+.card.card-image .card-header {
+  position: relative;
+}
+.card.card-image .card-header img {
+  width: 100%;
+  height: 100%;
+}
+.card.card-image .card-header span {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+.card.card-image .card-header span:hover {
+  color: rgb(102, 44, 191);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.card.card-image .card-title {
+  color: rgb(52, 194, 233);
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding: 0.5rem 0;
+}
+.card.card-image .card-text {
+  font-weight: 400;
+  color: rgb(117, 117, 117);
+  font-size: 0.875rem;
+  padding: 0 0 1rem;
+}
+.card.card-image .card-price {
+  font-weight: 400;
+  color: rgb(52, 194, 233);
+  font-size: 0.875rem;
+  padding: 0 0 1rem;
+}
+.card.card-image .card-price .price-original {
+  text-decoration: line-through;
+  color: rgb(117, 117, 117);
+  margin-left: 0.3rem;
+  font-size: 0.75rem;
+}
+.card.card-image .card-price .price-discounted {
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 768px) {
+  div.card-text {
+    width: 70%;
+  }
+}
+/* Card Component Styles End */

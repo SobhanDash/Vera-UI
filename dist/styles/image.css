@@ -1,0 +1,19 @@
+/* Image Component Styles Start */
+.image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 10px;
+}
+.img-circle {
+  border-radius: 50%;
+}
+
+/* Image Component Styles End */

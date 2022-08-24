@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Vera Ui is a lightweight CSS Library for developing fast and responsive web interfaces!"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="./prism.css" />
+    <script src="./prism.js" defer></script>
+    <title>Image | Vera UI</title>
+  </head>
+  <body>
+    <main class="main">
+      <div id="sidebar" class="sidebar">
+        <a href="start.html" class="active"> Getting Started </a>
+        <a href="alert.html"> Alert </a>
+        <a href="avatar.html"> Avatar </a>
+        <a href="badge.html"> Badge </a>
+        <a href="button.html"> Button </a>
+        <a href="card.html"> Card </a>
+        <a href="image.html"> Image </a>
+        <a href="input.html"> Input </a>
+        <a href="modal.html"> Modal </a>
+        <a href="list.html"> List </a>
+        <a href="rating.html"> Rating </a>
+        <a href="utilities.html"> Utilities </a>
+        <a href="navigation.html"> Navigation </a>
+        <a href="grid.html"> Grid </a>
+      </div>
+
+      <div class="header">
+        <div class="header-logo-div">
+          <a href="./index.html">
+            <img src="assets/VERA.svg" alt="Logo" class="header-logo" />
+          </a>
+          <p class="header-logo_title">VERA UI</p>
+        </div>
+        <div class="menu-btn">
+          <span class="menu-btn__burger">
+            <span class="menuicon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </span>
+            <span class="xicon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+                class="xicon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="main-topic">
+        <h1>Image</h1>
+        <h4>
+          An image is a graphic representation of something. Images can be made
+          responsive (so that they don't jump out of its parent container), have
+          rounded corners or can look like a circle.
+        </h4>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup" id>
+              @import url(https://vera-ui.netlify.app/dist/styles/.css)
+
+              <link rel="stylesheet" href="https://vera-ui.netlify.app/dist/styles/.css">
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Responsive Images</div>
+          <div class="box-description">
+            Images in Bootstrap are made responsive with
+            <code class="highlight">.img-responsive. max-width: 100%; </code>
+            and <code class="highlight"> height: auto; </code> are applied to
+            the image so that it scales with the parent element.
+          </div>
+          <div class="image-container">
+            <img
+              src="https://i.pinimg.com/400x/90/9b/28/909b28043773927ede4d409d618a55b1.jpg"
+              class="img-responsive"
+              alt="Responsive Image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup">
+              <img src="..." class="img-responsive" alt="...">
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Rounded Corners</div>
+          <div class="box-description">
+            The <code class="highlight">.img-rounded</code> class adds rounded
+            corners to an image
+          </div>
+          <div class="image-container">
+            <img
+              src="https://i.pinimg.com/400x/9e/80/c9/9e80c9639085215f362c3e2ec9182a3d.jpg"
+              class="img-rounded"
+              alt="Rounded Image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup">
+              <img src="..." class="img-rounded" alt="...">
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Circle Images</div>
+          <div class="box-description">
+            The <code class="highlight">.img-circle</code> class shapes the
+            image to a circle
+          </div>
+          <div class="image-container">
+            <img
+              src="https://i.pinimg.com/400x/fd/dc/6d/fddc6de2a771fb5f8a44465c58f86c77.jpg"
+              class="img-circle"
+              alt="Circle Image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup">
+              <img src="..." class="img-circle" alt="...">
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="footer">
+        <a href="card.html" class="footer-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          Card
+        </a>
+        <a href="input.html" class="footer-button">
+          Input
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
