@@ -1,0 +1,47 @@
+/* Input Component Styles Start */
+.input {
+  position: relative;
+  margin: 1rem;
+
+  > input {
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid $primary;
+    width: 20rem;
+    height: 3rem;
+    padding: 0.2rem;
+    background-color: $black-3;
+  }
+
+  > div {
+    position: absolute;
+    background-color: $black-3;
+    top: -0.6rem;
+    left: 1rem;
+    font-weight: 500;
+    padding: 0.1rem;
+    font-size: 0.9rem;
+  }
+
+  > input.error {
+    border: 2px solid $error-icon-color;
+  }
+  > div.error {
+    color: $status-dnd-color;
+  }
+  > input.warn {
+    border: 2px solid $warning-icon-color;
+  }
+  > div.warn {
+    color: $status-away-color;
+  }
+  > input.success {
+    border: 2px solid $success-icon-color;
+  }
+
+  > div.success {
+    color: $status-online-color;
+  }
+}
+
+/* Input Component Styles End */

@@ -1,0 +1,43 @@
+/* Input Component Styles Start */
+.input {
+  position: relative;
+  margin: 1rem;
+}
+.input > input {
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid rgb(52, 194, 233);
+  width: 20rem;
+  height: 3rem;
+  padding: 0.2rem;
+  background-color: rgb(56, 56, 58);
+}
+.input > div {
+  position: absolute;
+  background-color: rgb(56, 56, 58);
+  top: -0.6rem;
+  left: 1rem;
+  font-weight: 500;
+  padding: 0.1rem;
+  font-size: 0.9rem;
+}
+.input > input.error {
+  border: 2px solid rgb(244, 67, 54);
+}
+.input > div.error {
+  color: rgb(243, 70, 72);
+}
+.input > input.warn {
+  border: 2px solid rgb(255, 152, 0);
+}
+.input > div.warn {
+  color: rgb(249, 166, 26);
+}
+.input > input.success {
+  border: 2px solid rgb(76, 175, 80);
+}
+.input > div.success {
+  color: rgb(27, 112, 82);
+}
+
+/* Input Component Styles End */
