@@ -917,6 +917,66 @@ a {
   }
 }
 /* Modal Component Styles End */
+/* List Component Styles Start */
+.list {
+  list-style-type: none;
+  border: 1px solid rgb(26, 32, 44);
+  width: 17rem;
+}
+.list > label > input {
+  margin-right: 1em;
+}
+.list > label {
+  display: block;
+  list-style: none;
+  margin: 1em;
+}
+
+.list-heading {
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.list.list-spaced li {
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+}
+.list.list-spaced li:hover {
+  color: rgb(52, 194, 233);
+  opacity: 0.75;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.list.list-spaced li:last-child {
+  padding-bottom: 1rem;
+}
+
+.list.list-stacked {
+  padding: 2rem 0;
+}
+.list.list-stacked li {
+  padding: 1rem 1.5rem;
+  margin: 0.5rem 1rem;
+  border: 1px solid rgb(26, 32, 44);
+  background-color: rgb(26, 32, 44);
+  border-radius: 5px;
+}
+.list.list-stacked li:hover {
+  background-color: rgb(26, 32, 44);
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.list-icon {
+  float: right;
+  cursor: pointer;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+/* List Component Styles End */
 /* Landing Page Styles Start */
 .bg_section {
   width: 80vw;

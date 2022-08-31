@@ -1,0 +1,66 @@
+/* List Component Styles Start */
+
+.list {
+  list-style-type: none;
+  border: 1px solid $black-2;
+  width: 17rem;
+
+  > label > input {
+    margin-right: 1em;
+  }
+
+  > label {
+    display: block;
+    list-style: none;
+    margin: 1em;
+  }
+}
+
+.list-heading {
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.list.list-spaced {
+  li {
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+
+    &:hover {
+      color: $primary;
+      opacity: 0.75;
+      cursor: pointer;
+      @include transition-ease;
+    }
+
+    &:last-child {
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.list.list-stacked {
+  padding: 2rem 0;
+  li {
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 1rem;
+    border: 1px solid $black-2;
+    background-color: $black-2;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $black-2;
+      opacity: 0.8;
+      @include transition-ease;
+    }
+  }
+}
+
+.list-icon {
+  float: right;
+  cursor: pointer;
+  height: max-content;
+}
+
+/* List Component Styles End */
