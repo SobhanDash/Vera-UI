@@ -980,7 +980,6 @@ a {
 /* Navigation Component Styles Start */
 .nav {
   width: 100%;
-  z-index: 999;
   font-size: 1.2rem;
   background-color: rgb(56, 56, 58);
   display: flex;
@@ -990,6 +989,8 @@ a {
   position: sticky;
   top: 0;
   padding: 0.5rem 1rem;
+  border-bottom: 1px solid 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
 }
 
 .nav-menu {
@@ -1038,13 +1039,20 @@ a {
 }
 .nav-link:hover {
   color: rgb(52, 194, 233);
-  opacity: 0.75;
+  opacity: 0.7;
   transition: all 0.4s ease-in-out;
+}
+
+.nav-screen-error {
+  display: none;
 }
 
 @media (max-width: 768px) {
   .nav {
     display: none;
+  }
+  .nav-screen-error {
+    display: block;
   }
 }
 @media (max-width: 480px) {

@@ -2,7 +2,6 @@
 
 .nav {
   width: 100%;
-  z-index: 999;
   font-size: 1.2rem;
   background-color: $black-3;
   display: flex;
@@ -11,6 +10,8 @@
   position: sticky;
   top: 0;
   padding: 0.5rem 1rem;
+  border-bottom: 1px solid $box-shadow-button;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2);
 }
 
 .nav-menu {
@@ -58,14 +59,21 @@
 
   &:hover {
     color: $primary;
-    opacity: 0.75;
+    opacity: 0.7;
     @include transition-ease-2;
   }
+}
+
+.nav-screen-error {
+  display: none;
 }
 
 @media (max-width: 768px) {
   .nav {
     display: none;
+  }
+  .nav-screen-error {
+    display: block;
   }
 }
 
