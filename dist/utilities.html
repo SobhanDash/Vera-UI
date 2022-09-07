@@ -31,7 +31,7 @@
     <script src="./js/app.js" defer></script>
     <link rel="stylesheet" href="./prism.css" />
     <script src="./prism.js" defer></script>
-    <title>| Vera UI</title>
+    <title>Utilities | Vera UI</title>
   </head>
   <body>
     <main class="main">
@@ -97,31 +97,199 @@
         </div>
       </div>
       <div class="main-topic">
-        <h1></h1>
-        <h4></h4>
+        <h1>Utilities</h1>
+        <h4>
+          Documentation and examples for common text utilities to control
+          alignment, weight, and more.
+        </h4>
       </div>
       <div class="div-border">
         <div class="installation-container">
           <section class="embed">
             <script type="text/plain" class="line-numbers language-markup" id>
-              @import url(https://vera-ui.netlify.app/dist/styles/.css)
+              @import url(https://vera-ui.netlify.app/dist/styles/utilities.css)
 
-              <link rel="stylesheet" href="https://vera-ui.netlify.app/dist/styles/.css">
-              <link rel="stylesheet" href="http://127.0.0.1:5500/dist/styles/.css">
+              <link rel="stylesheet" href="https://vera-ui.netlify.app/dist/styles/utilitiescss">
             </script>
           </section>
         </div>
       </div>
       <div class="main-content">
-        <div class="main-content__box"></div>
+        <div class="main-content__box">
+          <div class="box-heading">Headings</div>
+          <div class="box-description">
+            All HTML headings, <code class="highlight">&lt;h1&gt;</code> through
+            <code class="highlight">&lt;h6&gt;</code>, are available.
+          </div>
+
+          <div class="heading-container">
+            <h1>H1 - Heading 1</h1>
+            <h2>H2 - Heading 2</h2>
+            <h3>H3 - Heading 3</h3>
+            <h4>H4 - Heading 4</h4>
+            <h5>H5 - Heading 5</h5>
+            <h6>H6 - Heading 6</h6>
+          </div>
+        </div>
       </div>
       <div class="div-border">
         <div class="installation-container">
           <section class="embed">
-            <script
-              type="text/plain"
-              class="line-numbers language-markup"
-            ></script>
+            <script type="text/plain" class="line-numbers language-markup">
+              <h1>H1 - Heading 1</h1>
+              <h2>H2 - Heading 2</h2>
+              <h3>H3 - Heading 3</h3>
+              <h4>H4 - Heading 4</h4>
+              <h5>H5 - Heading 5</h5>
+              <h6>H6 - Heading 6</h6>
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Alignments</div>
+          <div class="box-description">
+            Use classes <span class="highlight">.text-center</span> ,
+            <span class="highlight">.text-left</span> or
+            <span class="highlight">.text-right</span> to center, left or right
+            align text.
+          </div>
+
+          <div class="alignment-container">
+            <h6 class="text-left">Left Align</h6>
+            <h6 class="text-center">Center Align</h6>
+            <h6 class="text-right">Right Align</h6>
+          </div>
+        </div>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup">
+              <h6 class="text-left">Left Align</h6>
+              <h6 class="text-center">Center Align</h6>
+              <h6 class="text-right">Right Align</h6>
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Font Sizes</div>
+          <div class="box-description">
+            Use classes <code class="highlight">.fs-1</code>,
+            <code class="highlight">.fs-2</code>,
+            <code class="highlight">.fs-3</code> ,
+            <code class="highlight">.fs-4</code>,
+            <code class="highlight">.fs-5</code> or
+            <code class="highlight">.fs-6</code> to change the font-size of
+            text.
+          </div>
+
+          <div class="font-size-container">
+            <p class="fs-6">Font Size 6</p>
+            <p class="fs-5">Font Size 5</p>
+            <p class="fs-4">Font Size 4</p>
+            <p class="fs-3">Font Size 3</p>
+            <p class="fs-2">Font Size 2</p>
+            <p class="fs-1">Font Size 1</p>
+          </div>
+        </div>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup">
+              <p class="fs-6">Font Size 6</p>
+              <p class="fs-5">Font Size 5</p>
+              <p class="fs-4">Font Size 4</p>
+              <p class="fs-3">Font Size 3</p>
+              <p class="fs-2">Font Size 2</p>
+              <p class="fs-1">Font Size 1</p>
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Font Weight</div>
+          <div class="box-description">
+            Use classes <code class="highlight">.fw-100</code>,
+            <code class="highlight">.fw-300</code>,
+            <code class="highlight">.fw-400</code>
+            , <code class="highlight">.fw-700</code> or
+            <code class="highlight">.fw-900</code> to change the font-weight of
+            text ranging from 100 to 900.
+          </div>
+
+          <div class="font-weight-container">
+            <h5 class="fw-900">Font weight 900</h5>
+            <h5 class="fw-700">Font weight 700</h5>
+            <h5 class="fw-400">Font weight 400</h5>
+            <h5 class="fw-300">Font weight 300</h5>
+            <h5 class="fw-100">Font weight 100</h5>
+          </div>
+        </div>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup">
+              <h5 class="fw-900">Font weight 900 </h5>
+              <h5 class="fw-700">Font weight 700 </h5>
+              <h5 class="fw-400">Font weight 400 </h5>
+              <h5 class="fw-300">Font weight 300 </h5>
+              <h5 class="fw-100">Font weight 100 </h5>
+            </script>
+          </section>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-content__box">
+          <div class="box-heading">Extra styles</div>
+          <div class="box-description">
+            <ul class="">
+              <li>
+                To add strike-through on text, use
+                <code>text-strike</code> class
+              </li>
+              <li>
+                To add a line under a text, use
+                <code>text-underline</code> class
+              </li>
+              <li>
+                To add different text colors, use one of the classes
+                <code>primary-color</code>, <code>secondary-color</code>,
+                <code>error-color</code>, <code>warning-color</code> or
+                <code>success-color</code>.
+              </li>
+            </ul>
+          </div>
+
+          <div class="extra-styles-container">
+            <p class="primary-color">This text is of Primary Color</p>
+            <p class="secondary-color">This text is of Secondary Color</p>
+            <p class="error-color">This text is of Error Color</p>
+            <p class="warning-color">This text is of Warning Color</p>
+            <p class="success-color">This text is of Success Color</p>
+            <p class="text-strike">This text has a line going through it.</p>
+            <p class="text-underline">This text has a line underneath it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="div-border">
+        <div class="installation-container">
+          <section class="embed">
+            <script type="text/plain" class="line-numbers language-markup">
+              <p class="primary-color">This text is of Primary Color</p>
+              <p class="secondary-color">This text is of Secondary Color</p>
+              <p class="error-color">This text is of Error Color</p>
+              <p class="warning-color">This text is of Warning Color</p>
+              <p class="success-color">This text is of Success Color</p>
+              <p class="text-strike">This text has a line going through it.</p>
+              <p class="text-underline">This text has a line underneath it.</p>
+            </script>
           </section>
         </div>
       </div>
