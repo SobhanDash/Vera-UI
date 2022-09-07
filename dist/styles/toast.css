@@ -1,6 +1,24 @@
+/* Toast Component Styles Start */
 .toast {
-    background-color: #cdeee9;
-    padding: 1em;
-    border-radius: 0.6em;
-    border-left: 10px solid #009e81;
+  background-color: rgb(52, 194, 233);
+  padding: 1em;
+  border-radius: 0.6em;
+  border-left: 10px solid rgb(102, 44, 191);
+  color: rgb(255, 255, 255);
 }
+.toast-error {
+  background-color: rgb(253, 236, 234);
+  padding: 1em;
+  border-radius: 0.6em;
+  border-left: 10px solid rgb(244, 67, 54);
+  color: rgb(26, 32, 44);
+}
+.toast-warn {
+  background-color: rgb(255, 244, 229);
+  padding: 1em;
+  border-radius: 0.6em;
+  border-left: 10px solid rgb(255, 152, 0);
+  color: rgb(26, 32, 44);
+}
+
+/* Toast Component Styles End */
