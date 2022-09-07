@@ -59,10 +59,10 @@ Check out our **[documentation website](https://vera-ui.netlify.app/start.html)*
 
 ### **Screenshot**
 
-![Desktop Homepage](/preview/Desktop_Home.png "Desktop Homepage") <br /><br />
-![Desktop Getting Started](/preview/Desktop_Getting_Started.png "Desktop Getting Started")<br /><br />
-<img src="./preview/Mobile_Home.png" alt="Mobile Homepage"	title="Mobile Homepage" width="375" height="667" /><br /><br />
-<img src="./preview/Mobile_Avatar.png" alt="Mobile Avatar"	title="Mobile Avatar" width="375" height="667" />
+![Desktop Homepage](/previews/Desktop_Home.png "Desktop Homepage") <br /><br />
+![Desktop Getting Started](/previews/Desktop_Getting_Started.png "Desktop Getting Started")<br /><br />
+<img src="./previews/Mobile_Home.png" alt="Mobile Homepage"	title="Mobile Homepage" width="375" height="667" /><br /><br />
+<img src="./previews/Mobile_Avatar.png" alt="Mobile Avatar"	title="Mobile Avatar" width="375" height="667" />
 
 <br />
 
